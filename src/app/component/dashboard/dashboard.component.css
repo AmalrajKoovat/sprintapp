@@ -1,0 +1,36 @@
+.example-card {
+    text-align: center;
+    max-width: 400px;
+    height: 200px;
+    background-color: rgb(171, 230, 227);
+    overflow: hidden;
+    position: relative;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 2px 2px #888888;
+}
+
+#changemousepointer {
+    cursor: pointer;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+}
+
+#formbutton {
+    width: 25%;
+    height: 100%;
+    background: rgb(243 226 26);
+    font-size: 19px;
+    margin-left: 73%;
+    margin-top: 12px;
+    font-style: inherit;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.dashboard-card-content {
+    max-height: 100%;
+    position: absolute;
+    overflow: auto;
+}

@@ -1,0 +1,95 @@
+
+<!-- <div class="row">
+    <div class="input-group mb-6">
+        <button mat-raised-button color="basic" id="formbutton" (click)="dashboardRoute()">View Dashboard</button>
+    </div>
+</div> -->
+<div class="row">
+    <div class="offset-8 col-2 p-1  heightdiv" style="margin-left: 64.666667%;">
+        <button class="heightdiv" mat-raised-button color="basic" id="formbutton0" (click)="registerRoute()">Add Story</button>
+    </div>
+    <div class="col-2 p-1 text-center heightdiv">
+        <button class="heightdiv" mat-raised-button color="basic" id="formbutton1" (click)="dashboardRoute()">View Dashboard</button>
+    </div>
+</div>
+
+<div class="container-fluid bg-light">
+    <div class="container bg-light">
+        <div class="row mt-4">
+            <!-- <div class="col"></div> -->
+            <div class="col-md-12 bg-white shadow w-100">
+                
+                <div class="shadow">
+                    <form action="#" [formGroup]="profileForm" style="padding: 5px;">
+                        
+                        <div class="input-group mb-6">
+                            <input type="text" class="form-control" placeholder="Sprint point"
+                                formControlName="sprintpoint">
+                        </div>
+                        
+                        <!-- </form> -->
+                        <div class="input-group row" style="color: blue;">
+                            <div class="col p-3 text-center">
+                                <button  mat-raised-button color="basic" [disabled]="!profileForm.valid" id="formbutton2" (click)="storyFetch()">Auto select stories</button>
+                            </div>
+                            <div class="col p-3 text-center">
+                                <button  mat-raised-button color="basic" [disabled]="!profileForm.valid" id="formbutton2" (click)="clearSprint()">Clear Sprint</button>
+                            </div>
+                            <div class="col p-3 text-center">
+                                <button  mat-raised-button color="basic" id="formbutton2" (click)="clearStory()">Clear stories</button>
+                            </div>
+                        </div>
+                        <div class="input-group row" style="color: blue;">
+                            <div class="col-md-3" style="padding: 10px;" *ngFor="let item of filteredStories">
+                                <mat-card class="example-card">
+                                    <mat-card-title>{{item.newstory}}</mat-card-title>
+                                    <!-- <mat-card-header>{{item.story_name}}</mat-card-header> -->
+                                    <mat-card-subtitle>Sprint Point : {{item.sprintpoint}}</mat-card-subtitle>
+                                    <mat-card-content class="dashboard-card-content">{{item.storypoint}}</mat-card-content>
+                                </mat-card>
+                            </div>
+                        </div>
+                        <!-- <div class="input-group mb-6" style="padding-left: 45%;color: blue;">
+                        </div> -->
+
+                        <div class="row pt-3" *ngIf="clearstoryMsg">
+                            <div class="col-xs-12">
+                                <p class="alert alert-success">
+                                    <strong>Success!</strong>
+                        
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="input-group mb-6" style="padding-left: 45%;color: blue;">
+                        </div> -->
+
+                        <div class="row pt-3" *ngIf="clearsprintMsg">
+                            <div class="col-xs-12">
+                                <p class="alert alert-success">
+                                    <strong>Success!</strong>
+                        
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+                <!-- <h5 class="text-primary">Tasks : </h5>
+                <div class="overflow-y: auto;height:350px">
+                    <div class="m-3">
+                        <div class="p-2 shadow border">
+                            <div class="input-group row ps-3">
+                                <div class="card col-md-10 border-0">first Task</div>
+                                <button class="btn btn-outline-primary col me-2">e</button>
+                                <div class="btn btn-outline-danger col">x</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <div class="col"></div> -->
+        </div>
+    </div>
+</div>

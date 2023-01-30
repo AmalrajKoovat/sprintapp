@@ -1,0 +1,43 @@
+.example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+  }
+
+  #formbutton2{
+    width: 85%;
+    height: 40px;
+    background: darkseagreen;
+    font-size: 19px;
+    margin-left: -30%;
+    margin-top: 1%;
+    font-style: inherit;
+    border-radius: 5px;
+    border-style: none;
+}
+
+#formbutton0 {
+    float: right;
+    /* width: 45%; */
+    /* height: 120%; */
+    background: rgb(211, 197, 179);
+    font-size: 19px;
+    /* margin-left: 103%; */
+    margin-top: 1%;
+    font-style: inherit;
+    border-radius: 5px;
+    border-style: none;
+}
+.heightdiv{
+  height: 50px;
+}
+#formbutton1 {
+  float: left;
+  /* width: 45%; */
+  /* height: 120%; */
+  background: darkorange;
+  font-size: 19px;
+  /* margin-left: 40%; */
+  margin-top: 1%;
+  font-style: inherit;
+  border-radius: 5px;
+  border-style: none;
+}

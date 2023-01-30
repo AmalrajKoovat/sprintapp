@@ -1,0 +1,48 @@
+
+<div class="row">
+    <div class="offset-8 col-2 p-1  heightdiv">
+        <button class="heightdiv" mat-raised-button color="basic" id="formbutton0" (click)="sprintcalcRoute()">Sprint Calculator</button>
+    </div>
+    <div class="col-2 p-1 text-center heightdiv">
+        <button class="heightdiv" mat-raised-button color="basic" id="formbutton1" (click)="dashboardRoute()">View Dashboard</button>
+    </div>
+</div>
+
+
+<div class="container-fluid bg-light">
+    <div class="container bg-light">
+        <div class="row mt-4">
+            <div class="col"></div>
+            <div class="col-md-6 bg-white shadow">
+                <div class="card bg-warning mt-4">
+                    <h4 class="text-white ps-3 pt-2 pb-2">Add Story</h4>
+                </div>
+                <div class="shadow">
+                    <form action="#" [formGroup]="profileForm" style="padding: 5px;">
+                        
+                        <div class="input-group mb-6">
+                            <input type="text" class="form-control" placeholder="Sprint point"
+                                formControlName="sprintpoint">
+                     </div>
+                        <div class="input-group mb-6">
+                            <input type="text" class="form-control" placeholder="Story Name" formControlName="newstory">
+                        </div>
+                        <div class="input-group mb-6">
+                            <input type="text" class="form-control" placeholder="Story Point"
+                                formControlName="storypoint">
+                        </div>
+                        <!-- </form> -->
+                        <div class="input-group mb-6" style="padding-left: 45%;color: blue;">
+                            <button [disabled]="!profileForm.valid" mat-raised-button color="primary" id="formbutton2" (click)="addStory()">Add</button>
+                        </div>
+                        
+
+
+                    </form>
+                </div>
+                
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</div>

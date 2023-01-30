@@ -1,0 +1,60 @@
+#formbutton {
+    width: 25%;
+    height: 100%;
+    background: darkorange;
+    font-size: 19px;
+    margin-left: 72%;
+    margin-top: 1%;
+    font-style: inherit;
+    border-radius: 5px;
+    border-style: none;
+}
+#formbutton2{
+    /* width: 85%; */
+    height: 40px;
+    background: darkseagreen;
+    font-size: 19px;
+    /* margin-left: -30%; */
+    /* margin-top: 1%; */
+    font-style: inherit;
+    border-radius: 5px;
+    border-style: none;
+}
+.example-card {
+    text-align: center;
+    max-width: 400px;
+    height: 200px;
+    background-color: rgb(171, 230, 227);
+    overflow: hidden;
+    position: relative;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 2px 2px #888888;
+}
+
+#formbutton0 {
+    float: right;
+    /* width: 45%; */
+    /* height: 120%; */
+    background: rgb(211, 197, 179);
+    font-size: 19px;
+    /* margin-left: 103%; */
+    margin-top: 1%;
+    font-style: inherit;
+    border-radius: 5px;
+    border-style: none;
+}
+.heightdiv{
+  height: 50px;
+}
+#formbutton1 {
+  float: left;
+  /* width: 45%; */
+  /* height: 120%; */
+  background: darkorange;
+  font-size: 19px;
+  /* margin-left: 40%; */
+  margin-top: 1%;
+  font-style: inherit;
+  border-radius: 5px;
+  border-style: none;
+}
